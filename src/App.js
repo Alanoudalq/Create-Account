@@ -1,27 +1,37 @@
-import React from 'react';
-import './App.css';
-import Nav from './Nav';
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'govsa-ds';
+import './App.scss';
+import Navbar from './Navbar';
 import Home from './Home';
-import Myaccount from './Myacount';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Myaccount from './Myaccount';
+import Footer from './Footer';
+import { Switch, Route } from 'react-router-dom';
 
 
-function App(){
+class App extends Component {
 
-    return(
-      <Router>
-    <div className="App">
-      <Nav/>
 
-      <Switch>
-         <Route path= "/" exact component={Home}/>
-         <Route path="/Myaccount" component={Myaccount}/>
-      </Switch>
 
-    </div>
-      </Router>
-    );
+    render() {
+
+        return (
+
+            <div>
+                <Navbar />
+                <Switch>
+
+                    <Route exact path="/" component={Home} />
+                    <Route path="/myaccount" component={Myaccount} />
+
+                </Switch>
+                <Footer />
+
+            </div>
+
+        );
+
+    }
 }
 
 export default App;
-

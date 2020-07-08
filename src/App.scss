@@ -1,1 +1,37 @@
-@import " govsa-ds ";
+@import 'node_modules/govsa-ds/theme/govsa-theme-required.scss';
+@import '~bootstrap/scss/bootstrap';
+@import 'node_modules/govsa-ds/packages/govsa-header.scss';
+@import 'node_modules/govsa-ds/scss/components/header/index.scss';
+@import 'node_modules/govsa-ds/scss/components/footer/index.scss';
+@import 'node_modules/govsa-ds/scss/components/radio/index.scss';
+@import 'node_modules/govsa-ds/scss/components/checkbox/index.scss';
+@import 'node_modules/govsa-ds/scss/components/dropdown/index.scss';
+@import 'node_modules/govsa-ds/scss/components/table/index.scss';
+@import 'node_modules/govsa-ds/scss/components/text-input/index.scss';
+@import 'node_modules/govsa-ds/scss/components/buttons/index.scss';
+@import 'node_modules/govsa-ds/scss/components/pagination/index.scss';
+@import 'node_modules/govsa-ds/theme/govsa-theme-global.scss';
+@import 'node_modules/govsa-ds/scss/fonts.scss';
+@import 'node_modules/govsa-ds/scss/style.scss';
+
+
+
+li {
+  float: left;
+}
+
+li a {
+  padding: 8px 16px;
+  color: $white;
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0;
+
+}
+
+ 
+
+  
